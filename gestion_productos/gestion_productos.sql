@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-09-2023 a las 05:48:06
+-- Tiempo de generación: 17-05-2024 a las 23:00:57
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `bdd1`
+-- Base de datos: `gestion_productos`
 --
 
 -- --------------------------------------------------------
@@ -86,10 +86,10 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`cod_producto`, `nom_producto`, `marca`, `precio`, `stock`, `estado`, `tipoproducto`, `unidad_medida`) VALUES
-(1, 'Turron', 3, 150.00, 3000, 0, 3, 1),
-(6, 'eso', 2, 2222.00, 2222, 0, 2, 1),
+(1, 'Turron', 3, 150.00, 3000, 0, 3, 2),
 (7, 'eso', 2, 2222.00, 2222, 0, 2, 1),
-(8, 'eso', 2, 2222.00, 2222, 0, 2, 1);
+(9, 'Alfajor', 3, 300.00, 8000, 0, 3, 2),
+(10, 'Tomate Perita', 1, 1290.00, 101, 0, 6, 2);
 
 -- --------------------------------------------------------
 
@@ -112,7 +112,9 @@ INSERT INTO `tipo_producto` (`cod_tipo`, `nom_tipo`, `estado`) VALUES
 (2, 'Galletitas', 1),
 (3, 'Golosinas', 0),
 (4, 'Electrodomesticos', 1),
-(5, 'Lácteos', 0);
+(5, 'Lácteos', 0),
+(6, 'Verdulería/s', 0),
+(7, 'ffsfsf', -1);
 
 -- --------------------------------------------------------
 
@@ -183,13 +185,13 @@ ALTER TABLE `marca`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `cod_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `cod_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `tipo_producto`
 --
 ALTER TABLE `tipo_producto`
-  MODIFY `cod_tipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `cod_tipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `unidad_medida`
