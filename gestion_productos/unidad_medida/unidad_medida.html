@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/estilo.css">
+    <title>Unidad de medida</title>
+</head>
+<body>
+    <nav></nav>
+    <h1>Unidades de Medida</h1>
+
+    <main>
+        <form action="guardar/guardar_um.php" method="POST">
+            <!-- <p>
+                <label for="cod_um">Código</label>
+                <input type="number" name="cod_um" id="cod_um" placeholder="Ingrese un codigo para la unidad de medida">
+            </p> -->
+            <p>
+                <label for="nom_um">Unidad de Medida</label>
+                <input type="text" name="nom_um" id="nom_um" placeholder="Ingrese un nombre para la unidad de medida">
+            </p>
+            <p>
+                <label for="abrev">Abreviatura</label>
+                <input type="text" name="abrev" id="abrev" placeholder="Ingrese una abreviatura para la unidad de medida">
+            </p>
+            <input type="submit" value="Guardar" name="btn-um" id="btn-um">
+            <a onclick="history.go(-1);" target="_blank"><input class="volver" type="button" value="Volver"></a>
+            <a href="registros/registro_um.php" target="_blank"><input class="listado" type="button" value="Listado"></a>
+    
+        </form>
+    </main>
+    <footer>&copy; Labiaguerre Ivan</footer>
+</body>
+</html>

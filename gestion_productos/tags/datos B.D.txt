@@ -1,0 +1,24 @@
+
+    Unidad de medida => cod_um
+                        nom_um
+			abrev
+
+    Producto => cod_producto
+                Nombre
+                marca[*]
+                precio
+                stock
+                estado[*]
+                cod_tipoproducto[*]
+                cod_medida[*]
+
+    tipo_producto => cod_tipo
+                    nom_tipo
+                    estado
+
+    marca => cod_marca
+            nom_marca
+
+    estado => cod_estado
+            desc_estado
+

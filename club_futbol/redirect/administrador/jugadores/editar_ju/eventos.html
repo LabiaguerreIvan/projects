@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirado</title>
+    
+	<!-- Extencionces para estilos generales CSS-->
+	<link rel="stylesheet" href="../../css/normalize.css">
+	<link rel="stylesheet" href="../../css/sweetalert2.css">
+	<link rel="stylesheet" href="../../css/material.min.css">
+	<link rel="stylesheet" href="../../css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="../../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../../css/main.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <script>
+        Swal.fire({
+    title: "¿Estas seguro de Retirar este Jugador?",
+    text: "El estado del jugador cambiará a Retirado",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Si, cambiar estado"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        title: "Jugador Retirado",
+        text: "Se ha cambiado el estado del Jugador",
+        icon: "success"
+      });
+       history.go(-1); 
+    }else{
+     history.go(-1);   
+    }
+  });
+    </script>
+</body>
+</html>

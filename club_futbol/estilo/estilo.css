@@ -1,0 +1,136 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, rgb(240, 219, 186), rgb(240, 199, 238));
+  transition: background 0.5s ease-in-out;
+  animation: gradientAnimation 10s ease infinite;
+  margin: none;
+  padding: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 40px 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  /*Text*/
+  /*Hover*/
+}
+.grid .card {
+  width: 180px;
+  height: 230px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+.grid .card-details {
+  color: black;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+.grid .card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+.grid .text-body {
+  color: rgb(134, 134, 134);
+}
+.grid .text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.grid .card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+.grid .card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+nav {
+  border-radius: 6px;
+  padding: auto;
+}
+nav li {
+  padding: 10px;
+  margin: 3px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #3b3333;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type=email],
+form input[type=password],
+input[type=number],
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+form input[type=submit], input[type=button] {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #03d642;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}/*# sourceMappingURL=estilo.css.map */

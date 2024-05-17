@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/estilo.css">
+    <title>Estado</title>
+</head>
+<body>
+    <h1>Estado del Producto</h1>
+    <main>
+        <form action="guardar/guardar_estado.php" method="POST">
+            <p>
+            <label for="cod_estado">Código</label>
+            <input type="number" name="cod_estado" id="cod_estado" placeholder="Ingrese un código para el estado">
+        </p>
+        <p>
+            <label for="nom_estado">Estado</label>
+            <input type="text" name="nom_estado" id="nom_estado" placeholder="Ingrese un estado">
+        </p>
+        <input type="submit" value="Guardar" name="btn-estado" id="btn-estado" >
+        <a onclick="history.go(-1)"><input type="button" value="Volver"></a>
+        <a href="registros/registro_estado.php" target="_blank"><input class="listado" type="button" value="Listado"></a>
+        </form>
+    </main>
+    <footer>&copy;Labiaguerre Ivan</footer>
+</body>
+</html>

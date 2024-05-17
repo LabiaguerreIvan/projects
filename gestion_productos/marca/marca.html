@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/estilo.css">
+    <title>Marca</title>
+</head>
+<body>
+    <h1>Modulo de Marcas</h1>
+    <main>
+        <form action="guardar/guardar_marca.php" method="POST">
+            <!-- <p>
+                <label for="cod_marca">Código</label>
+                <input type="number" name="cod_marca" id="cod_marca" placeholder="Ingrese un código para la marca">
+            </p> -->
+            <p>
+                <label for="nom_marca">Nombre</label>
+                <input type="text" name="nom_marca" id="nom_marca" placeholder="Asigne un nombre a la marca">
+            </p>
+            <input type="submit" value="Guardar" name="btn-marca" id="btn-marca">
+            <a onclick="history.go(-1);" target="_blank"><input class="volver" type="button" value="Volver"></a>
+            <a href="registros/registro_marca.php" target="_blank"><input class="listado" type="button" value="Listado"></a>
+        
+        </form>
+    </main>
+    <footer>&copy;Labiaguerre Ivan</footer>
+</body>
+</html>
